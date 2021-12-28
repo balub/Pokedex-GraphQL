@@ -10,9 +10,9 @@ function PokemonCard({ data }) {
       <img src={sprite} alt="pokemon" />
       <div className="Card-Content">
         <div className="Card-Chips">
-          <PokemonTypeChip />
-          <PokemonTypeChip />
-          <PokemonTypeChip />
+          {pokemon_type.map((item) => (
+            <PokemonTypeChip data={item} />
+          ))}
         </div>
         <p>{name.toUpperCase()}</p>
       </div>
