@@ -1,5 +1,5 @@
 import React from "react";
-import PokemonTypeChip from "./PokemonTypeChip/PokemonTypeChip";
+import PokemonTypeChip from "../PokemonTypeChip/PokemonTypeChip";
 
 import "./styles.scss";
 
@@ -12,6 +12,8 @@ function PokemonCard() {
       />
       <div className="Card-Content">
         <div className="Card-Chips">
+          <PokemonTypeChip />
+          <PokemonTypeChip />
           <PokemonTypeChip />
         </div>
         <p>Pokemon Name</p>

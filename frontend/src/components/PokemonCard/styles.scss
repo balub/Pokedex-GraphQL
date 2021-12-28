@@ -18,6 +18,8 @@
     font-size: larger;
     .Card-Chips {
       padding: 5px;
+      display: flex;
+      align-items: center;
     }
     p {
       margin: 0 5px;
