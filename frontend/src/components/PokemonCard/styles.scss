@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   justify-content: center;
+  margin: 5px;
   img {
     width: 226px;
     height: 216px;
@@ -15,14 +16,15 @@
     border-radius: 10px;
     background-color: gainsboro;
     color: #000;
-    font-size: larger;
     .Card-Chips {
       padding: 5px;
       display: flex;
       align-items: center;
     }
     p {
-      margin: 0 5px;
+      margin: 5px;
+      font-size: larger;
+      font-weight: bold;
     }
   }
 }
