@@ -1,7 +1,7 @@
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
 
-import { schema } from "./schema.js";
+import { schema } from "./schema/schema.js";
 
 var app = express();
 
