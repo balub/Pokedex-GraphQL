@@ -1,6 +1,6 @@
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
-import { cors } from "cors";
+import  cors  from "cors";
 import { schema } from "./schema/schema.js";
 
 var app = express();
