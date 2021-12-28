@@ -7,6 +7,8 @@ import {
   gql,
 } from "@apollo/client";
 
+import PokemonCard from "./components/PokemonCard/PokemonCard";
+
 const client = new ApolloClient({
   uri: "http://localhost:4000/graphql",
   cache: new InMemoryCache(),
@@ -15,7 +17,9 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="App"></div>
+      <div className="App">
+        <PokemonCard />
+      </div>
     </ApolloProvider>
   );
 }
