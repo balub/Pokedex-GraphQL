@@ -13,14 +13,14 @@ import { fetchPokemon } from "./service/queries";
 function App() {
   const { loading, error, data } = useQuery(fetchPokemon);
 
-  console.log(data);
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   return (
     <div className="App">
-      <PokemonCard />
+      {data.all_pokemon.map((item) => (
+        <PokemonCard data={item} key={item.id} />
+      ))}
     </div>
   );
 }
