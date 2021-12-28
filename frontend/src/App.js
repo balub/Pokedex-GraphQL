@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import {
   ApolloClient,
   InMemoryCache,
@@ -16,7 +16,6 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <header className="App-header"></header>
       </div>
     </ApolloProvider>
   );
