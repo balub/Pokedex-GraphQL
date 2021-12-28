@@ -18,6 +18,14 @@ const PokemonType = new GraphQLObjectType({
         return parentValue.pokemon_data.sprites.other.dream_world.front_default;
       },
     },
+    pokemon_type: {
+      type: new GraphQLList(GraphQLString),
+      resolve(parentValue) {
+        return parentValue.pokemon_data.types.map((item) => {
+          return item.type.name;
+        });
+      },
+    },
   },
 });
 
